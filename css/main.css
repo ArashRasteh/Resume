@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #282828;
+  color: #3e3e3e;
+  transition: opacity 0.6s;
+  padding: 1rem 0;
+}
+
+body {
+  background-color: white;
+  /* font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Work Sans', sans-serif;
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+div#page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.side {
+  padding: 25px;
+}
+
+.left.side {
+  width: 30%;
+  background-color: #1b3a5e;
+  color: white;
+}
+
+.right.side {
+  width: 70%;
+}
+
+.portrait-area {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  background: url('../img/IMG-20181202-WA0001.jpg');
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.job-title {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+h1.my-name {
+  font-weight: 100;
+  font-size: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacts-area {
+  height: 300px;
+  text-align: center;
+}
+
+.contact-me {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  margin: 1.5rem -5px;
+}
+
+.contact-me a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit
+}
+
+.address-about-skills {
+  min-height: 100vh;
+  min-height: calc( 100vh - 300px);
+  text-align: center;
+  display: block;
+  flex-wrap: wrap;
+}
+
+img.small-icons {
+  width: 30px;
+}
+
+h3.section-header {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.address-about-skills p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0;
+}
+
+.address-about-skills-section {
+  margin: 2rem 0 4rem;
+  width: 100%;
+}
+
+.bar-outer {
+  background-color: #182336;
+  height: 1.2rem;
+  width: 230px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.bar-inner {
+  height: 1.2rem;
+  background-color: white;
+}
+
+.experiences.right.side {
+  padding: 3.5rem 0 25px;
+}
+
+.experience-header {
+  width: 360px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chronology {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 180px 660px;
+}
+
+.chron-dates {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 25px;
+  align-items: flex-end;
+}
+
+span.chron-sep {
+  display: none;
+  margin: 0 5px;
+}
+
+.chron-experiences {
+  padding: 0 25px;
+  border-left: 3px solid;
+  position: relative;
+}
+
+.chron-experiences::before {
+  content: "";
+  background-image: url(../img/experience-bullet.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  left: -0.6rem;
+  left: calc(-0.6rem - 1px);
+  top: 0;
+}
+
+.chron-experiences:last-of-type {
+  border-left-color: rgba(0,0,0,0);
+}
+
+.chron-experiences h4 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.chron-experiences h5 {
+  margin: 0.25rem 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+@media print {
+  html {
+    background-color: inherit;
+    padding: 0;
+  }
+}
