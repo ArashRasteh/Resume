@@ -119,8 +119,12 @@ h3.section-header {
 }
 
 .address-about-skills-section {
-  margin: 2rem 0 4rem;
+  margin-bottom: 10rem;
   width: 100%;
+}
+
+.address-about-skills-section:last-of-type {
+  margin-bottom: 1rem;
 }
 
 .bar-outer {
@@ -138,7 +142,7 @@ h3.section-header {
 }
 
 .experiences.right.side {
-  padding: 3.5rem 0 25px;
+  padding: 25px 0;
 }
 
 .experience-header {
@@ -150,7 +154,7 @@ h3.section-header {
 .chronology {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   display: grid;
   grid-template-columns: 180px 660px;
 }
@@ -198,6 +202,10 @@ span.chron-sep {
 .chron-experiences h5 {
   margin: 0.25rem 0;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.chron-experiences p {
+  margin-top: 0.25rem;
 }
 
 
