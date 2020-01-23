@@ -82,7 +82,7 @@ h1.my-name {
   flex-wrap: wrap;
   font-size: 1.6rem;
   justify-content: space-between;
-  margin: 1.5rem -5px;
+  margin: 0.8rem -5px;
 }
 
 .contact-me a {
@@ -98,6 +98,7 @@ h1.my-name {
   text-align: center;
   display: block;
   flex-wrap: wrap;
+  padding: 0 25px;
 }
 
 img.small-icons {
@@ -119,7 +120,7 @@ h3.section-header {
 }
 
 .address-about-skills-section {
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   width: 100%;
 }
 
@@ -142,13 +143,20 @@ h3.section-header {
 }
 
 .experiences.right.side {
-  padding: 25px 0;
+  padding: 0;
 }
 
 .experience-header {
   width: 360px;
   text-align: center;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-header h3.section-header {
+  margin-left: 0.5rem;
 }
 
 .chronology {
@@ -159,6 +167,10 @@ h3.section-header {
   grid-template-columns: 180px 660px;
 }
 
+.chronology a {
+  text-decoration: none;
+  color: inherit;
+}
 .chron-dates {
   display: flex;
   flex-direction: column-reverse;
@@ -204,8 +216,9 @@ span.chron-sep {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.chron-experiences p {
-  margin-top: 0.25rem;
+.chron-experiences p, .chron-experiences ul {
+  margin-top: 0.5rem;
+  padding-left: 1.4rem;
 }
 
 
