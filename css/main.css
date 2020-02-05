@@ -27,6 +27,18 @@ div#page {
   flex-wrap: wrap;
 }
 
+.wd-show, .om-show {
+  display: none;
+}
+
+.om-resume .om-show {
+  display: inherit;
+}
+
+.wd-resume .wd-show {
+  display: inherit;
+}
+
 .side {
   padding: 25px;
 }
@@ -122,6 +134,10 @@ h3.section-header {
 .address-about-skills-section {
   margin-bottom: 4.5rem;
   width: 100%;
+}
+
+.om-resume .address-about-skills-section {
+  margin-bottom: 4rem;
 }
 
 .address-about-skills-section:last-of-type {
