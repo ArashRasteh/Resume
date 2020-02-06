@@ -49,6 +49,30 @@ div#page {
   color: white;
 }
 
+/* Printer Settings:
+Margins: Minimum
+Scale: Custom -> 68
+Options: 
+  Check: Background Graphics
+  Uncheck: Headers and Footers
+*/
+
+/* .printer-friendly .left.side {
+  padding-left: 50px;
+} */
+
+.printer-friendly .address-about-skills p {
+  font-weight: 500;
+}
+
+/* .printer-friendly .address-about-skills-section {
+  margin-bottom: 3.4rem;
+} */
+
+.printer-friendly .address-about-skills-section:last-of-type {
+  margin-bottom: 3rem;
+}
+
 .right.side {
   width: 70%;
 }
